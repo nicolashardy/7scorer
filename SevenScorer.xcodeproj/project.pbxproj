@@ -11,17 +11,19 @@
 		2DE8A3F11E50790500953FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8A3F01E50790500953FB9 /* ViewController.swift */; };
 		2DE8A3F41E50790500953FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8A3F21E50790500953FB9 /* Main.storyboard */; };
 		2DE8A3F61E50790500953FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8A3F51E50790500953FB9 /* Assets.xcassets */; };
-		2DE8A3F91E50790500953FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE8A3F71E50790500953FB9 /* LaunchScreen.storyboard */; };
+		DCCD08C163B0548B3B1ACFF3 /* Pods_SevenScorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAA27B4983A8124E2339A176 /* Pods_SevenScorer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271F57E28DC1F9C19167D55A /* Pods-SevenScorer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SevenScorer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SevenScorer/Pods-SevenScorer.release.xcconfig"; sourceTree = "<group>"; };
 		2DE8A3EB1E50790500953FB9 /* SevenScorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SevenScorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE8A3EE1E50790500953FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DE8A3F01E50790500953FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2DE8A3F31E50790500953FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DE8A3F51E50790500953FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2DE8A3F81E50790500953FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DE8A3FA1E50790500953FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8BEFDDB82DCEDE000A1C4E6 /* Pods-SevenScorer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SevenScorer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SevenScorer/Pods-SevenScorer.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA27B4983A8124E2339A176 /* Pods_SevenScorer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SevenScorer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +31,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCCD08C163B0548B3B1ACFF3 /* Pods_SevenScorer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18190B0BECD71DEA8098E2D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAA27B4983A8124E2339A176 /* Pods_SevenScorer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2DE8A3E21E50790500953FB9 = {
 			isa = PBXGroup;
 			children = (
 				2DE8A3ED1E50790500953FB9 /* SevenScorer */,
 				2DE8A3EC1E50790500953FB9 /* Products */,
+				B65DF529C94C7B2755A7737A /* Pods */,
+				18190B0BECD71DEA8098E2D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +71,18 @@
 				2DE8A3F01E50790500953FB9 /* ViewController.swift */,
 				2DE8A3F21E50790500953FB9 /* Main.storyboard */,
 				2DE8A3F51E50790500953FB9 /* Assets.xcassets */,
-				2DE8A3F71E50790500953FB9 /* LaunchScreen.storyboard */,
 				2DE8A3FA1E50790500953FB9 /* Info.plist */,
 			);
 			path = SevenScorer;
+			sourceTree = "<group>";
+		};
+		B65DF529C94C7B2755A7737A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8BEFDDB82DCEDE000A1C4E6 /* Pods-SevenScorer.debug.xcconfig */,
+				271F57E28DC1F9C19167D55A /* Pods-SevenScorer.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DE8A3FD1E50790500953FB9 /* Build configuration list for PBXNativeTarget "SevenScorer" */;
 			buildPhases = (
+				DA031C991B1279CB99612F4F /* [CP] Check Pods Manifest.lock */,
 				2DE8A3E71E50790500953FB9 /* Sources */,
 				2DE8A3E81E50790500953FB9 /* Frameworks */,
 				2DE8A3E91E50790500953FB9 /* Resources */,
+				996B4B84540844924CA17038 /* [CP] Embed Pods Frameworks */,
+				F72B42529E26A5DCABFA6B8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,13 +148,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DE8A3F91E50790500953FB9 /* LaunchScreen.storyboard in Resources */,
 				2DE8A3F61E50790500953FB9 /* Assets.xcassets in Resources */,
 				2DE8A3F41E50790500953FB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		996B4B84540844924CA17038 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SevenScorer/Pods-SevenScorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA031C991B1279CB99612F4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F72B42529E26A5DCABFA6B8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SevenScorer/Pods-SevenScorer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DE8A3E71E50790500953FB9 /* Sources */ = {
@@ -151,14 +222,6 @@
 				2DE8A3F31E50790500953FB9 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2DE8A3F71E50790500953FB9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DE8A3F81E50790500953FB9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,10 +322,13 @@
 		};
 		2DE8A3FE1E50790500953FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8BEFDDB82DCEDE000A1C4E6 /* Pods-SevenScorer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = X7565LUJWN;
 				INFOPLIST_FILE = SevenScorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NHC.SevenScorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +338,13 @@
 		};
 		2DE8A3FF1E50790500953FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271F57E28DC1F9C19167D55A /* Pods-SevenScorer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = X7565LUJWN;
 				INFOPLIST_FILE = SevenScorer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NHC.SevenScorer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +371,7 @@
 				2DE8A3FF1E50790500953FB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
